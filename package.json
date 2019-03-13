@@ -1,0 +1,20 @@
+{
+  "name": "prototype-me",
+  "version": "1.0.0",
+  "description": "A tool to prototype routes from an API using express",
+  "main": "./lib/parser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "prototype": "bin/example.js"
+  },
+  "keywords": [
+    "prototype",
+    "stub"
+  ],
+  "author": "Willyan Antunes",
+  "license": "MIT",
+  "preferGlobal": "true",
+  "dependencies": {}
+}
