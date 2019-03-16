@@ -18,7 +18,6 @@ The json file should be like this:
 
 ```
 {
-	{
     "user":{
         "type":"group",
         "routes":{
@@ -31,7 +30,6 @@ The json file should be like this:
                 "type":"get",
                 "path":":id",
                 "response":{"name":"foo", "last":"bar"}
-                
             }
         }
     },
@@ -41,15 +39,14 @@ The json file should be like this:
         "response":"1.0.0"
     }
 }
-}
 ```
 
 It will create a this route tree:
 
 ```
-user
---listAll
---listOne/:id
+/user
+--/
+--/:id
 ```
 
 ## Built With
