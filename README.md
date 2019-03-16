@@ -3,37 +3,70 @@ A tool to prototype routes from an API using express
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+Install
 
 ```
-Give the example
+npm install -g willyandan/prototype-me.js
+```
+Usage
+
+```
+prototype file.json dir
 ```
 
-And repeat
+The json file should be like this: 
 
 ```
-until finished
+{
+	{
+    "user":{
+        "type":"group",
+        "routes":{
+            "listAll":{
+                "type":"get",
+                "path":"",
+                "response":[{"name":"foo", "last":"bar"}, {"name":"bar", "last":"foo"}]
+            },
+            "lisOne":{
+                "type":"get",
+                "path":":id",
+                "response":{"name":"foo", "last":"bar"}
+                
+            }
+        }
+    },
+    "version":{
+        "type":"get",
+        "path":"version",
+        "response":"1.0.0"
+    }
+}
+}
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+It will create a this route tree:
+
+```
+user
+--listAll
+--listOne/:id
+```
 
 ## Built With
 
-* [Node.js](https://nodejs.org/en/) - Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+* [Node.js](https://nodejs.org/en/)
+
+* [Express.js](https://expressjs.com/)
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md]() for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
 
 * **Willyan Antunes** - *Initial work* - [prototype-me.js](https://github.com/willyandan/prototype-me.js)
+
+* **André Marco** - *Minor tweaks and docs* - [git](https://github.com/andremarcopereira)
 
 
 ## License
