@@ -47,6 +47,7 @@ It will create a this route tree:
 /user
 --/
 --/:id
+/version
 ```
 
 ## Built With
@@ -57,7 +58,7 @@ It will create a this route tree:
 
 ## Contributing
 
-Please read [CONTRIBUTING.md]() for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/willyandan/prototype-me.js/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
 
