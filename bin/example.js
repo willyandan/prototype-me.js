@@ -14,3 +14,5 @@ const val = JSON.parse(fs.readFileSync(json,"utf8"))
 parser(val,name)
 
 package(name)
+
+console.log(`\n\n\tcd ${name}\n\n\tnpm install\n\tnpm run dev\n\n`)
