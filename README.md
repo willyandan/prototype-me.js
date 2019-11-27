@@ -12,6 +12,9 @@ Usage
 
 ```
 prototype file.json dir
+
+cd dir
+npm install && npm run dev
 ```
 
 The json file should be like this: 
